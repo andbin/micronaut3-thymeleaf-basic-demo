@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--/*
+SPDX-FileCopyrightText: Copyright (c) 2022 Andrea Binello ("andbin")
+SPDX-License-Identifier: MIT
+*/-->
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" th:href="@{/css/reset.css}" type="text/css">
+<link rel="stylesheet" th:href="@{/css/home.css}" type="text/css">
+<title>Micronaut 3 &ndash; Thymeleaf Basic Demo</title>
+</head>
+<body>
+
+<h1>Micronaut 3 &ndash; Thymeleaf Basic Demo</h1>
+
+<table class="app-info">
+  <tr>
+    <td class="label">Java Runtime Version</td>
+    <td class="value" th:text="${appInfo.javaRuntimeVersion}"></td>
+  </tr>
+  <tr>
+    <td class="label">Micronaut Version</td>
+    <td class="value" th:text="${appInfo.micronautVersion}"></td>
+  </tr>
+  <tr>
+    <td class="label">Thymeleaf Version</td>
+    <td class="value" th:text="${appInfo.thymeleafVersion}"></td>
+  </tr>
+</table>
+
+</body>
+</html>
