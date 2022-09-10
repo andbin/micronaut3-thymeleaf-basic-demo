@@ -29,5 +29,14 @@ SPDX-License-Identifier: MIT
   </tr>
 </table>
 
+<h2>Netty Versions</h2>
+
+<table class="app-info">
+  <tr th:each="nettyVersion : ${appInfo.nettyVersions}">
+    <td class="label" th:text="${nettyVersion.key}"></td>
+    <td class="value" th:text="${nettyVersion.value}"></td>
+  </tr>
+</table>
+
 </body>
 </html>
